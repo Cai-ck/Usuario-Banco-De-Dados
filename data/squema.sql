@@ -1,3 +1,4 @@
+-- Tabela de usuários
 create table usuarios (
 ID SERIAL primary key,
 username varchar(50) not null,
@@ -5,8 +6,10 @@ password_hash varchar(100),
 foto_perfil varchar(255) default 'default_avatar.png'
 );
 
+-- Enumeração de status de jogo
 create type status_jogo as enum ('iniciado', 'zerado','engavetado', 'abandonado');
 
+-- Tabela de jogos
 create table jogos (
 ID serial primary key,
 usuario_ID int,
