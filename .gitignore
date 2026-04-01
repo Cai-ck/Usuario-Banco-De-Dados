@@ -1,0 +1,4 @@
+# Dados sensíveis, como chaves de API, não devem ser incluídos no controle de versão. Este arquivo .gitignore garante que o arquivo .env, que contém a chave de API do Steam, seja ignorado pelo Git e não seja compartilhado publicamente.
+
+.env
+.venv
